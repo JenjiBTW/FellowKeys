@@ -1,0 +1,93 @@
+@font-face {
+    font-family: pixel;
+    src: url(/Fonts/Code7X5Regular-ypBe.ttf);
+}
+
+@font-face {
+    font-family: anurati;
+    src: url(/Fonts/Anurati-Regular.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    /*font-family: Poppins;*/
+    
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Images/FellowBg4.png);
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .static-txt{
+    color: black;
+    font-size: 75px;
+    font-weight: 850;
+    position: relative;
+    font-family: Poppins;
+
+}
+
+.wrapper .dynamic-txt{
+    margin-left: 30px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txt li {
+    list-style: none;
+    color: rgb(255, 95, 95);
+    font-size: 70px;
+    font-weight: 800;
+    font-family: pixel;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(3)
+    infinite;
+}
+
+@keyframes slide{
+    100% {
+        top: -270px;
+    }
+}
+
+.dynamic-txt li {
+    position: relative;
+}
+
+
+
+.dynamic-txt li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 6px solid black;
+    animation: typing 4s steps(21)
+    infinite;
+}
+
+@keyframes typing{
+    40%,
+    60%{
+        left: calc(100% + 30px)
+    }
+    100% {
+        left: 0
+    }
+}
