@@ -1,11 +1,11 @@
 @font-face {
     font-family: pixel;
-    src: url(/Fonts/Code7X5Regular-ypBe.ttf);
+    src: url(Fonts/Code7X5Regular-ypBe.ttf);
 }
 
 @font-face {
     font-family: anurati;
-    src: url(/Fonts/Anurati-Regular.otf);
+    src: url(Fonts/Anurati-Regular.otf);
 }
 
 
@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/Images/FellowBg4.png);
+    background-image: url(Images/FellowBg4.png);
 }
 
 
